@@ -13,7 +13,7 @@
   },
   "huksy": {
       "hooks": {
-         "pre-commit": "echo \"Running husky pre-commit\"", 
+         "pre-commit": "echo \"Running husky pre-commit\""
       }
   }
 }
