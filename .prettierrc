@@ -1,0 +1,16 @@
+{
+  "singleQuote": false,
+  "trailingCommna": "es5",
+  "printWidth": 120,
+  "tabWidth": 4,
+  "overrides": [
+    {
+      "files": ["**/*.html"],
+      "options": {
+        "printWidth": 150,
+        "tabWidth": 2
+      }
+    }
+  ]
+}
+
