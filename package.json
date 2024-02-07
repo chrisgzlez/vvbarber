@@ -1,19 +1,11 @@
 {
-  "name": "vvbarber",
-  "version": "1.0.0",
-  "description": "Web project",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "husky": "^9.0.10"
   },
-  "huksy": {
-      "hooks": {
-         "pre-commit": "echo \"Running husky pre-commit\"", 
-      }
+  "scripts": {
+    "prepare": "husky"
+  },
+  "husky": {
+      "pre-commit": "echo \"[Husky] Running PreCommit\""
   }
 }
