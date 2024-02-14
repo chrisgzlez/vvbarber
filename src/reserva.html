@@ -25,15 +25,56 @@
       <h1>Visítanos</h1>
     </header>
     <main>
-      <h2>Avenida Monteral, 7</h2>
-      <h3>Baiona, Galicia, España</h3>
-      <p>Visita nuestras instalaciones en la ubicación mostrada en el mapa</p>
+      <h2>Contactanos</h2>
+      <p>Le proporcionamos los siguientes datos para que pueda contactar con nosotros</p>
+      <dl>
+        <dt>Dirección</dt>
+        <dd>Avenida Monterreal, 7 Baiona, Galicia, España</dd>
+        <dt>Horario</dt>
+        <dd>
+          <ul>
+            <li>
+              <p>Lunes-Viernes</p>
+              <p>10:00 - 14:00</p>
+              <p>16:00 - 20:00</p>
+            </li>
+            <li>
+              <p>Sabados</p>
+              <p>10:00 - 14:00</p>
+            </li>
+            <li>
+              <p>Domingos y Festivos</p>
+              <p><strong>Cerrado</strong></p>
+            </li>
+          </ul>
+        </dd>
+        <dt>Teléfono</dt>
+        <dd>+34 986 35 78 90</dd>
+      </dl>
     </main>
     <aside>
-      <img
-        src="media/images/ubicacion.png"
-        alt="Localización de la Barbería: Avenida Monteral, 7, Baiona, Galicia, EspañaAvenida Monteral, 7, Baiona, Galicia, España"
-      />
+      <form method="post">
+        <fieldset>
+          <legend>Con quién te cortas el pelo</legend>
+          <label><input name="barber" required type="radio" /> Pablo López</label>
+          <label><input name="barber" type="radio" /> Pedro Echevarría</label>
+          <label><input name="barber" type="radio" /> Nacho García</label>
+        </fieldset>
+        <fieldset>
+          <legend>Qué dia te viene bien</legend>
+          <input required type="date" />
+        </fieldset>
+        <fieldset>
+          <legend>A qué hora te viene bien</legend>
+          <input required type="time" />
+        </fieldset>
+        <fieldset>
+          <legend>Cómo te llamas</legend>
+          <label>Nombre: <input required type="text" autocomplete="given-name" placeholder="Sergio" /></label>
+          <label>Apellidos: <input type="text" autocomplete="family-name" placeholder="Vadillos Vilar" /></label>
+        </fieldset>
+        <button>Reservar</button>
+      </form>
     </aside>
     <footer>
       <figure>
