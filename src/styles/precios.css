@@ -48,8 +48,9 @@ header::before {
     display: flex;
     align-items: flex-end;
     color: white;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    border-bottom: 3px solid white;
+    width: min(50%, 40rem);
+    margin: 0 0 3rem 4rem;
 }
 
 .logo {
