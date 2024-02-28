@@ -53,53 +53,53 @@ header.titulo{
   padding-left: 10px;
 }
 
-header.navbar.logo{
+.logo{
   margin-right: auto;
   cursor: pointer;
 }
 
-header.navbar.logo img{
+.logo img{
   width: 70px;
   height: auto;
   transition: all 0.3s;
 }
 
-header.navbar.logo.logo img:hover{
+.logo img:hover{
   transform: scale(1.1);
 }
 
-header.navbar.nav-links{
+.nav-links{
   list-style: none;
 }
 
-header.navbar.nav-links li{
+.nav-links li{
   display: inline-block;
   padding: 0 20px;
   padding-top: 25px;
 }
 
-header.navbar.nav-links li:hover{
+.nav-links li:hover{
   transform: scale(1.1);
 }
 
-header.navbar.nav-links li a{
+.nav-links li a{
   text-decoration: none;
   color: white;
 }
 
-header.navbar.nav-links li a:hover{
+.nav-links li a:hover{
   color: bisque;
 }
 
-header.navbar.reserva{
+.reserva{
   padding: 20px;
 }
 
-header.navbar.reserva:hover{
+.reserva:hover{
   transform: scale(1.1);
 }
 
-header.navbar.reserva a{
+.reserva a{
   display: inline-block;
   padding: 5px 15px;
   background-color: white;
@@ -110,7 +110,7 @@ header.navbar.reserva a{
   transition: background-color 0.3s ease;
 }
 
-header.navbar.reserva a:hover{
+.reserva a:hover{
   transform: scale(1.1);
   color: bisque;
   background-color: gray;  
