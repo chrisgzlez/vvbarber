@@ -20,8 +20,7 @@ header {
     background-size: cover;
     background-position: center;
     width: 100%;
-    /*height: 30em;*/
-    height: 500px;
+    height: max(15rem, 40vh);
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
