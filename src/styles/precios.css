@@ -8,6 +8,7 @@
     --bg-primary: #23232e;
     --bg-secondary: #141418;
     --transition-speed: 600ms;
+    font-family: Helvetica, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -22,7 +23,6 @@ header {
     width: 100%;
     height: max(15rem, 40vh);
     padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header::before {
