@@ -38,13 +38,13 @@ header::before{
 
 }
 
-header.navbar{
+.navbar{
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 
-header.titulo{
+.titulo{
   position: relative;
   display: flex;
   align-items: flex-end;
