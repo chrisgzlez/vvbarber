@@ -38,13 +38,13 @@ header::before{
 
 }
 
-.navbar{
+header.navbar{
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 
-.titulo{
+header.titulo{
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -53,53 +53,53 @@ header::before{
   padding-left: 10px;
 }
 
-.logo{
+header.navbar.logo{
   margin-right: auto;
   cursor: pointer;
 }
 
-.logo img{
+header.navbar.logo img{
   width: 70px;
   height: auto;
   transition: all 0.3s;
 }
 
-.logo img:hover{
+header.navbar.logo.logo img:hover{
   transform: scale(1.1);
 }
 
-.nav-links{
+header.navbar.nav-links{
   list-style: none;
 }
 
-.nav-links li{
+header.navbar.nav-links li{
   display: inline-block;
   padding: 0 20px;
   padding-top: 25px;
 }
 
-.nav-links li:hover{
+header.navbar.nav-links li:hover{
   transform: scale(1.1);
 }
 
-.nav-links li a{
+header.navbar.nav-links li a{
   text-decoration: none;
   color: white;
 }
 
-.nav-links li a:hover{
+header.navbar.nav-links li a:hover{
   color: bisque;
 }
 
-.reserva{
+header.navbar.reserva{
   padding: 20px;
 }
 
-.reserva:hover{
+header.navbar.reserva:hover{
   transform: scale(1.1);
 }
 
-.reserva a{
+header.navbar.reserva a{
   display: inline-block;
   padding: 5px 15px;
   background-color: white;
@@ -110,7 +110,7 @@ header::before{
   transition: background-color 0.3s ease;
 }
 
-.reserva a:hover{
+header.navbar.reserva a:hover{
   transform: scale(1.1);
   color: bisque;
   background-color: gray;  
