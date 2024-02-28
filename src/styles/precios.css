@@ -38,6 +38,7 @@ header::before {
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
 }
 
@@ -52,32 +53,24 @@ header::before {
 }
 
 .logo {
-    margin-right: auto;
-    cursor: pointer;
-}
-
-.logo img {
-    width: 70px;
+    width: 4rem;
+    min-width: 50px;
     height: auto;
     transition: all 0.3s;
 }
 
-.logo img:hover {
+.logo:hover {
     transform: scale(1.1);
 }
 
 .nav-links {
     list-style: none;
+    margin-left: auto;
 }
 
 .nav-links li {
     display: inline-block;
-    padding: 0 20px;
-    padding-top: 25px;
-}
-
-.nav-links li:hover {
-    transform: scale(1.1);
+    padding: 0px 20px;
 }
 
 .nav-links li a {
@@ -85,16 +78,14 @@ header::before {
     color: white;
 }
 
-.nav-links li a:hover {
+.nav-links li:hover,
+.nav-links li:hover > a {
+    transform: scale(1.1);
     color: bisque;
 }
 
 .reserva {
-    padding: 20px;
-}
-
-.reserva:hover {
-    transform: scale(1.1);
+    padding: 0 20px;
 }
 
 .reserva a {
@@ -105,10 +96,10 @@ header::before {
     text-decoration: none;
     border-radius: 20px;
     border: none;
-    transition: background-color 0.3s ease;
+    transition: transform 0.1s ease;
 }
 
-.reserva a:hover {
+.reserva > a:hover {
     transform: scale(1.1);
     color: bisque;
     background-color: gray;
