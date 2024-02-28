@@ -7,7 +7,7 @@
 
 ## CSS Pages
 
--   Home: Boostrap
+-   Home: <Flexbox, Ivan>
 -   Conócenos: <Grid, Ivan>
 -   Galería: <Flexbox, Chris>
 -   Precios: <Multicol, Ivan>
