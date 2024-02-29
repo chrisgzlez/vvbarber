@@ -11,6 +11,7 @@
     font-family: Helvetica, Geneva, Tahoma, sans-serif;
 }
 
+/*------------- HEADER ----------------*/
 header {
     background-image: url(../media/images/background.jpg);
     background-repeat: no-repeat;
@@ -34,34 +35,14 @@ header::before {
     right: 0;
     background-color: rgba(0, 0, 0, 0.33);
 }
+/*------------- END HEADER ----------------*/
 
+/*------------- NAVBAR ----------------*/
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-}
-
-.titulo {
-    font-size: clamp(1rem, 3vw + 0.5rem, 3rem);
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    color: white;
-    border-bottom: 3px solid white;
-    width: min(50%, 40rem);
-    margin: 0 0 3rem 4rem;
-}
-
-.logo {
-    width: 4rem;
-    min-width: 50px;
-    height: auto;
-    transition: all 0.3s;
-}
-
-.logo:hover {
-    transform: scale(1.1);
 }
 
 .nav-links {
@@ -105,3 +86,29 @@ header::before {
     color: bisque;
     background-color: gray;
 }
+/*------------- END NAVBAR ----------------*/
+
+h1 {
+    font-size: clamp(1rem, 3vw + 0.5rem, 3rem);
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    border-bottom: 3px solid white;
+    width: min(50%, 40rem);
+    margin: 0 0 3rem 4rem;
+}
+
+/*------------- LOGO ----------------*/
+.logo {
+    width: 4rem;
+    min-width: 50px;
+    height: auto;
+    transition: all 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/*------------- END LOGO ----------------*/
