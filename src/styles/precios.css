@@ -3,11 +3,6 @@
     box-sizing: border-box;
     font-size: clamp(16px, 1vw, 32px);
     font-family: "Open Sans";
-    --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
-    --bg-primary: #23232e;
-    --bg-secondary: #141418;
-    --transition-speed: 600ms;
     font-family: Helvetica, Geneva, Tahoma, sans-serif;
 }
 
@@ -104,6 +99,7 @@ h1 {
     width: 4rem;
     min-width: 50px;
     height: auto;
+    margin: 0 0.5rem;
     transition: all 0.3s;
 }
 
@@ -112,3 +108,58 @@ h1 {
 }
 
 /*------------- END LOGO ----------------*/
+
+.footer {
+    background-color: #2e2e2d;
+    height: 20vh;
+    height: max(10rem, 20vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footer * {
+    color: #a2a29d;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-links {
+    display: flex;
+}
+
+.links-block {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    justify-content: center;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: bisque;
+}
+
+.social-links > li {
+    margin: 0.5rem;
+}
+
+.icon {
+    width: 2rem;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
