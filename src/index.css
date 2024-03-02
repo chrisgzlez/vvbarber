@@ -8,7 +8,7 @@
 
 /*------------- HEADER ----------------*/
 header {
-  background-image: url(../media/images/background.jpg);
+  background: url(../media/images/background.jpg);
   background-repeat: no-repeat;
   display: flex;
   position: relative;
