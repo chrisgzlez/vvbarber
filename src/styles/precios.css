@@ -94,6 +94,23 @@ h1 {
     margin: 0 0 3rem 4rem;
 }
 
+h2 {
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 3rem);
+    display: flex;
+    margin: 1rem auto 0;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+h3 {
+    font-size: clamp(1rem, 1vw + 0.5rem, 3rem);
+    display: flex;
+    align-items: flex-start;
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+    margin-bottom: 1rem;
+}
+
 /*------------- LOGO ----------------*/
 .logo {
     width: 4rem;
@@ -108,6 +125,51 @@ h1 {
 }
 
 /*------------- END LOGO ----------------*/
+
+
+/*------------- PRECIOS ----------------*/
+
+section{
+    column-count: 2;
+    background-color: blue;
+    padding: 1rem 1rem 1rem 1rem;
+    width: 100%;
+    height: 100%;
+    column-gap: 20px;
+    column-rule: 4px dotted rgb(79 185 227);
+}
+
+.texto{
+    margin: auto;
+    height: 50%;
+    background-color: red;
+    vertical-align: middle;
+}
+
+section ul li{
+    column-count: 2;
+}
+
+section figure{
+    background-color: green;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+section figure img{
+    background-color: yellow;
+    object-fit: cover;
+    object-position: 80% 50%;
+    width: 70%;
+    height: auto;
+    padding: 10px;
+}
+
+
+
+
+
+/*------------- END PRECIOS ----------------*/
 
 .footer {
     background-color: #2e2e2d;
