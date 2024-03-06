@@ -120,6 +120,7 @@ h1 {
     padding: 1rem;
 }
 
+/*------------- FOOTER ----------------*/
 .footer * {
     color: #a2a29d;
 }
@@ -163,3 +164,4 @@ h1 {
 .icon:hover {
     transform: scale(1.1);
 }
+/*------------- END FOOTER ----------------*/
