@@ -7,12 +7,12 @@
 
 ## CSS Pages
 
--   Home: <Flexbox, Ivan>
--   Conócenos: <Grid, Ivan>
--   Galería: <Flexbox, Chris>
--   Precios: <Multicol, Ivan>
--   Ubicación: <Float, Chris :(>
--   Reservar: Bootstrap
+-   [ ] Home: <Flexbox, Ivan>
+-   [ ] Conócenos: <Grid, Ivan>
+-   [ ] Galería: <Flexbox, Chris>
+-   [ ] Precios: <Multicol, Ivan>
+-   [ ] Ubicación: <Float, Chris :(>
+-   [ ] Reservar: Bootstrap
 
 ## TODO DOCS
 
