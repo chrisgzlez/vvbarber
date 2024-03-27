@@ -13,7 +13,7 @@
 -   Precios: <Multicol, Ivan>
 -   Ubicación: <Float, Chris :(>
 -   Reservar: Bootstrap
-
+- Hacer media queries en todas las paginas para que sea responisva
 ## TODO DOCS
 
 -   [ ] Crear apartado de HTML en el documento

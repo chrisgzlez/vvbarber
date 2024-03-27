@@ -4,48 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VVBarbería</title>
+    <link rel="stylesheet" href="../styles/conocenos.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <figure>
+      <nav class="navbar">
+        <figure class="logo">
           <a href="/index.html">
-            <img src="/media/images/logo.svg" alt="Logo Barbería Vadillos Vilar" width="50px" height="50px" />
+            <img src="/media/images/logo.svg" alt="Logo Barbería Vadillos Vilar" />
           </a>
         </figure>
-        <ul>
+        <ul class="nav-links">
           <li><a href="/pages/conocenos.html">Conócenos</a></li>
           <li><a href="/pages/galeria.html">Galería</a></li>
           <li><a href="/pages/precios.html">Precios</a></li>
           <li><a href="/pages/ubicacion.html">Ubicación</a></li>
         </ul>
-        <p><a href="/pages/reserva.html">Reservar una Cita</a></p>
+        <p class="reserva"><a href="/pages/reserva.html">Reservar una Cita</a></p>
       </nav>
       <h1>Quienes Somos</h1>
     </header>
 
     <main>
-      <section>
+      <section id="historia">
         <h2>LA BARBERIA</h2>
         <figure>
-          <img src="/media/images/service_001" alt="Foto de historia de la barberia" width="500px" height="750px" />
-          <figcaption>
-            <h3>Historia</h3>
-            <p>
-              Fundada en el año 2023, VVBarbería se erige como un santuario para aquellos que buscan más que un simple corte de pelo; es un lugar
-              donde la destreza artesanal y la atención personalizada convergen para crear looks excepcionales.
-            </p>
-            <p>
-              En VVBarbería, nuestra misión es más que solo cortar el cabello; se trata de resaltar la individualidad de cada cliente, realzando su
-              estilo personal con cortes y acabados precisos. Nuestro equipo de barberos altamente capacitados no solo son expertos en las últimas
-              tendencias, sino que también abrazan la rica herencia de la barbería clásica, ofreciendo servicios que combinan lo moderno con lo
-              atemporal.
-            </p>
-          </figcaption>
+          <img src="/media/images/service_001" alt="Foto de historia de la barberia" />
         </figure>
-        <hr />
+        <div id="texto">
+          <h3>Historia</h3>
+          <p>
+            Fundada en el año 2023, VVBarbería se rige como un santuario para aquellos que buscan más que un simple corte de pelo; es un lugar
+            donde la destreza artesanal y la atención personalizada convergen para crear looks excepcionales.
+          </p>
+          <p>
+            En VVBarbería, nuestra misión es más que solo cortar el cabello; se trata de resaltar la individualidad de cada cliente, realzando su
+            estilo personal con cortes y acabados precisos. Nuestro equipo de barberos altamente capacitados no solo son expertos en las últimas
+            tendencias, sino que también abrazan la rica herencia de la barbería clásica, ofreciendo servicios que combinan lo moderno con lo
+            atemporal.
+          </p>
+          <p>
+            A través de nuestra dedicación a la excelencia y la pasión por nuestro oficio, nos esforzamos por ofrecer una experiencia de barbería 
+            incomparable, donde la calidad y el servicio al cliente son nuestra prioridad número uno.
+          </p>
+        </div>
       </section>
-      <section>
+
+      <section id="personal">
         <h2>NUESTRO EQUIPO</h2>
         <ul>
           <li>
@@ -104,43 +109,50 @@
       </section>
     </main>
 
-    <footer>
-      <figure>
+    <footer class="footer">
+      <figure class="logo">
         <a href="/index.html">
-          <img src="/media/images/logo.svg" alt="Logo Barbería Vadillos Vilar" width="50px" height="50px" />
+          <img src="/media/images/logo.svg" alt="Logo Barbería Vadillos Vilar" />
         </a>
       </figure>
-      <p>Avenida Montereal,7 Baiona Galicia,España 986357890</p>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/pages/conocenos.html">Conócenos</a></li>
-        <li><a href="/pages/galeria.html">Galería</a></li>
-        <li><a href="/pages/precios.html">Precios</a></li>
-        <li><a href="/pages/ubicacion.html">Ubicación</a></li>
-        <li><a href="/pages/reserva.html">Reservar una Cita</a></li>
+      <p><a href="https://maps.app.goo.gl/NTLTnHrJQid7dQME6">Avenida Montereal 7, Baiona Galicia, España 986357890</a></p>
+      <ul class="footer-links">
+        <div class="links-block">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/conocenos.html">Conócenos</a></li>
+          <li><a href="/pages/galeria.html">Galería</a></li>
+        </div>
+        <hr />
+        <div class="links-block">
+          <li><a href="/pages/precios.html">Precios</a></li>
+          <li><a href="/pages/ubicacion.html">Ubicación</a></li>
+          <li><a href="/pages/reserva.html">Reservar</a></li>
+        </div>
       </ul>
 
-      <ul>
+      <ul class="social-links">
         <!-- Instagram -->
+        <li>
+          <a href="/index.html">
+            <img class="icon" src="/media/images/logos/instagram.png" alt="Enlace a nuestra página de Instagram" />
+          </a>
+        </li>
 
-        <li>
-          <a href="/index.html">
-            <img src="mozilla-image.png" alt="Enlace a nuestra página de Instagram" />
-          </a>
-        </li>
-        <!-- Facebook -->
-        <li>
-          <a href="/index.html">
-            <img src="mozilla-image.png" alt="Enlace a nuestra página de Facebook" />
-          </a>
-        </li>
         <!-- Twitter -->
         <li>
           <a href="/index.html">
-            <img src="mozilla-image.png" alt="Enlace a nuestra página de Twitter" />
+            <img class="icon" src="/media/images/logos/twitter.png" alt="Enlace a nuestra página de Twitter" />
+          </a>
+        </li>
+
+        <!-- TikTok -->
+        <li>
+          <a href="/index.html">
+            <img class="icon" src="/media/images/logos/tiktok.png" alt="Enlace a nuestra página de Tiktok" />
           </a>
         </li>
       </ul>
     </footer>
   </body>
 </html>
+
