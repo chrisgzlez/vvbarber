@@ -8,11 +8,11 @@
 ## CSS Pages
 
 -   Home: <Flexbox, Chris>
--   Conócenos: <Grid, Ivan>
+-   Conócenos: <Flexbox, Ivan>
 -   Galería: <Grid, Ivan>
 -   Precios: <Multicol, Ivan>
 -   Ubicación: <Float, Chris :(>
--   Reservar: Bootstrap
+-   Reservar: <Bootstrap, Chris>
 - Hacer media queries en todas las paginas para que sea responisva
 ## TODO DOCS
 

@@ -135,49 +135,53 @@ h3 {
 /*------------- SECCION HISTORIA ----------------*/
 
 #historia{
-  margin-top: 8%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 150px 450px;
-  grid-row-gap: 15%;
-  grid-column-gap: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  flex-direction: column;
   height: 100vh;
 }
 
 #historia > h2{
-  grid-column: 1/3;
-  grid-row: 1;
-}
-
-#texto{
   display: flex;
-  flex-direction: column;
-  justify-content:center ;
-  margin-right: 10%;
-  grid-column: 2;
-  grid-row: 2;
-  
+  align-items: center;
+  margin-top: 100px;
 }
 
-#texto > p{
-  margin-bottom: 2%;
+.card{
+  height: 80%;
+  display: flex;
+  margin-bottom: 100px;
 }
 
-#historia > figure{
-  margin-left: 20%;
+.card figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
   height: 100%;
   width: 100%;
-  grid-column: 1;
-  grid-row: 2;
 }
 
-#historia > figure img{
+.card figure img {
   object-fit: cover;
   object-position: 90% 50%;
-  width: 90%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
   padding: 10px;
-  
+}
+
+
+.card .texto{
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  margin: auto 100px auto 50px;
+}
+
+.texto > p{
+  margin-bottom: 2%;
 }
 
 /*------------- END SECCION HISTORIA ----------------*/
@@ -188,17 +192,67 @@ h3 {
   background-color: brown;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  grid-template-rows: 10% 30% 30% 30%;
-  grid-gap: 10%;
+  grid-template-rows: 5% 30% 30% 30%;
+  grid-row-gap: 15%;
+  grid-column-gap: 10%;
+  height: 80vh;
 }
 
 #personal > h2{
+  background-color: aquamarine;
   grid-column: 1/3;
   grid-row: 1;
 }
 
+.barber > figure{
+  background-color: aqua;
+  margin-left: 20%;
+  height: 100%;
+  width: 100%;
+}
+
+.barber > figure img{
+  object-fit: cover;
+  object-position: 90% 50%;
+  width: 90%;
+  height: 70%;
+  padding: 10px;
+}
+
+#barber1 > figure{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#barber1 > figure{
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#barber1 > figure{
+  grid-column: 1;
+  grid-row: 4;
+}
 
 
+
+
+
+.texto-barbero{
+  background-color: #2e2e2d;
+  display: flex;
+  flex-direction: column;
+  justify-content:center ;
+  margin-right: 10%;
+  grid-column: 2;
+  grid-row: 2;
+  
+}
+
+.texto-barbero > p{
+  margin-bottom: 2%;
+}
+  
 /*------------- END SECCION PERSONAL ----------------*/
 
 
