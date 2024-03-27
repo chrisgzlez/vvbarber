@@ -1,104 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VVBarbería</title>
+    <link rel="stylesheet" href="../styles/galeria.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <figure>
+      <nav class="navbar">
+        <figure class="logo">
           <a href="/index.html">
-            <img src="/media/images/logo.svg" alt="Logo Barbería Vadillos Vilar" width="50px" height="50px" />
+            <img src="/media/images/logo.svg" alt="Logo Barbería Vadillos Vilar" />
           </a>
         </figure>
-        <ul>
+        <ul class="nav-links">
           <li><a href="/pages/conocenos.html">Conócenos</a></li>
           <li><a href="/pages/galeria.html">Galería</a></li>
           <li><a href="/pages/precios.html">Precios</a></li>
           <li><a href="/pages/ubicacion.html">Ubicación</a></li>
         </ul>
-        <p><a href="/pages/reserva.html">Reservar una Cita</a></p>
+        <p class="reserva"><a href="/pages/reserva.html">Reservar una Cita</a></p>
       </nav>
-
-      <h1>Nuestros Cortes y Barbas</h1>
+      <h1>Galería</h1>
     </header>
     <main>
-      <h2>Cortes</h2>
-      <ul>
-        <li>
-          <img src="/media/images/barbas/barba_001.jpg" alt="Barba 1" width="500px" height="750px" />
-        </li>
-        <li>
-          <img src="/media/images/barbas/barba_002.jpg" alt="Barba 2" width="500px" height="750px" />
-        </li>
-        <li>
-          <img src="/media/images/barbas/barba_003.jpg" alt="Barba 3" width="500px" height="750px" />
-        </li>
-        <li>
-          <img src="/media/images/barbas/barba_004.jpg" alt="Barba 4" width="500px" height="750px" />
-        </li>
-      </ul>
-      <h2>Barbas</h2>
-      <ul>
-        <li>
-          <img src="/media/images/cortes/cortes_000.jpg" alt="Cortes 0" width="500px" height="750px" />
-        </li>
-        <li>
-          <img src="/media/images/cortes/cortes_001.jpg" alt="Cortes 1" width="500px" height="750px" />
-        </li>
-        <li>
-          <img src="/media/images/cortes/cortes_002.jpg" alt="Cortes 2" width="500px" height="750px" />
-        </li>
-        <li>
-          <img src="/media/images/cortes/cortes_003.jpg" alt="Cortes 3" width="500px" height="750px" />
-        </li>
-        <li>
-          <img src="/media/images/cortes/cortes_004.jpg" alt="Cortes 4" width="500px" height="750px" />
-        </li>
-        <li>
-          <img src="/media/images/cortes/cortes_005.jpg" alt="Cortes 5" width="500px" height="750px" />
-        </li>
-        <li>
-          <img src="/media/images/cortes/cortes_006.jpg" alt="Cortes 6" width="500px" height="750px" />
-        </li>
-      </ul>
+      <div class="card alto" style="background-image: url(../media/images/barbas/barba_001.jpg)"></div>
+      <div class="card alto" style="background-image: url(../media/images/cortes/cortes_000.jpg)"></div>
+      <div class="card" style="background-image: url(../media/images/barbas/barba_002.jpg)"></div>
+      <div class="card " style="background-image: url(../media/images/barbas/barba_004.jpg)"></div>
+      <div class="card ancho" style="background-image: url(../media/images/cortes/cortes_002.jpg)"></div>
+      <div class="card ancho alto" style="background-image: url(../media/images/cortes/cortes_004.jpg)"></div>
+      <div class="card alto" style="background-image: url(../media/images/cortes/cortes_005.jpg)"></div>
+      <div class="card " style="background-image: url(../media/images/barbas/barba_003.jpg)" ></div>
+      <div class="card alto ancho" style="background-image: url(../media/images/cortes/cortes_001.jpg)"></div>
+      <div class="card alto" style="background-image: url(../media/images/cortes/cortes_006.jpg)"></div>
+      <div class="card alto" style="background-image: url(../media/images/cortes/cortes_003.jpg)"></div>
     </main>
-    <footer>
-      <figure>
+    <footer class="footer">
+      <figure class="logo">
         <a href="/index.html">
-          <img src="/media/images/logo.svg" alt="Logo Barbería Vadillos Vilar" width="50px" height="50px" />
+          <img src="/media/images/logo.svg" alt="Logo Barbería Vadillos Vilar" />
         </a>
       </figure>
-      <p>Avenida Montereal,7 Baiona Galicia,España 986357890</p>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/pages/conocenos.html">Conócenos</a></li>
-        <li><a href="/pages/galeria.html">Galería</a></li>
-        <li><a href="/pages/precios.html">Precios</a></li>
-        <li><a href="/pages/ubicacion.html">Ubicación</a></li>
-        <li><a href="/pages/reserva.html">Reservar una Cita</a></li>
+      <p><a href="https://maps.app.goo.gl/NTLTnHrJQid7dQME6">Avenida Montereal 7, Baiona Galicia, España 986357890</a></p>
+      <ul class="footer-links">
+        <div class="links-block">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/conocenos.html">Conócenos</a></li>
+          <li><a href="/pages/galeria.html">Galería</a></li>
+        </div>
+        <hr />
+        <div class="links-block">
+          <li><a href="/pages/precios.html">Precios</a></li>
+          <li><a href="/pages/ubicacion.html">Ubicación</a></li>
+          <li><a href="/pages/reserva.html">Reservar</a></li>
+        </div>
       </ul>
 
-      <ul>
+      <ul class="social-links">
         <!-- Instagram -->
+        <li>
+          <a href="/index.html">
+            <img class="icon" src="/media/images/logos/instagram.png" alt="Enlace a nuestra página de Instagram" />
+          </a>
+        </li>
 
-        <li>
-          <a href="/index.html">
-            <img src="mozilla-image.png" alt="Enlace a nuestra página de Instagram" />
-          </a>
-        </li>
-        <!-- Facebook -->
-        <li>
-          <a href="/index.html">
-            <img src="mozilla-image.png" alt="Enlace a nuestra página de Facebook" />
-          </a>
-        </li>
         <!-- Twitter -->
         <li>
           <a href="/index.html">
-            <img src="mozilla-image.png" alt="Enlace a nuestra página de Twitter" />
+            <img class="icon" src="/media/images/logos/twitter.png" alt="Enlace a nuestra página de Twitter" />
+          </a>
+        </li>
+
+        <!-- TikTok -->
+        <li>
+          <a href="/index.html">
+            <img class="icon" src="/media/images/logos/tiktok.png" alt="Enlace a nuestra página de Tiktok" />
           </a>
         </li>
       </ul>

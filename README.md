@@ -7,9 +7,9 @@
 
 ## CSS Pages
 
--   Home: <Flexbox, Ivan>
+-   Home: <Flexbox, Chris>
 -   Conócenos: <Grid, Ivan>
--   Galería: <Flexbox, Chris>
+-   Galería: <Grid, Ivan>
 -   Precios: <Multicol, Ivan>
 -   Ubicación: <Float, Chris :(>
 -   Reservar: Bootstrap
