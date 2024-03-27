@@ -19,3 +19,8 @@
 -   [ ] Crear apartado de HTML en el documento
 -   [ ] Crear apartado de CSS en el documento
 -   [ ] Crear apartado de cambios
+
+## EFECTOS A REALIZAR
+
+-   Precios: <Multicol, Ivan>
+    - Aparecen los elementos cuando scrolleamos

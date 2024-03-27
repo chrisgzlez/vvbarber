@@ -1,5 +1,6 @@
 * {
     margin: 0px;
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-size: clamp(16px, 1vw, 32px);
     font-family: "Open Sans";
@@ -129,9 +130,10 @@ h3 {
 
 /*------------- PRECIOS ----------------*/
 
+
 section{
     column-count: 2;
-    padding: 6rem 1rem 1rem 1rem;
+    padding: 8rem 1rem 1rem 1rem;
     margin: 0 auto;
     text-align: center;
     position: relative;
