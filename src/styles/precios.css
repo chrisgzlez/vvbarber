@@ -131,19 +131,21 @@ h3 {
 
 section{
     column-count: 2;
-    background-color: blue;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 6rem 1rem 1rem 1rem;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
     width: 100%;
     height: 100%;
     column-gap: 20px;
-    column-rule: 4px dotted rgb(79 185 227);
 }
 
 .texto{
-    margin: auto;
-    height: 50%;
-    background-color: red;
-    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(50%);
 }
 
 section ul li{
@@ -151,16 +153,15 @@ section ul li{
 }
 
 section figure{
-    background-color: green;
-    display: inline-block;
+    height: auto;
     width: 100%;
     text-align: center;
 }
 section figure img{
-    background-color: yellow;
+    margin: 0 auto;
     object-fit: cover;
     object-position: 80% 50%;
-    width: 70%;
+    width: 50%;
     height: auto;
     padding: 10px;
 }
