@@ -93,6 +93,11 @@ header::before {
   transition: transform 0.1s ease;
 }
 
+.nav-active .reserva a{
+  background-color: black;
+  color: white;
+}
+
 .reserva > a:hover {
   transform: scale(1.1);
   color: bisque;
