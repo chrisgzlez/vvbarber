@@ -242,7 +242,7 @@ main {
   grid-auto-rows: minmax(200px, auto);
   grid-auto-flow: dense;
   gap: 45px;
-  padding: 100px;
+  padding: 30px;
 }
 
 @media (min-width: 600px) {
