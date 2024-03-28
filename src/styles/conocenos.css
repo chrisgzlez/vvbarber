@@ -188,8 +188,8 @@ h3 {
 
 #personal{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  margin-top: 5%;
   margin-bottom: 8%;
   flex-direction: column;
 }
@@ -242,6 +242,20 @@ h3 {
 .texto > p{
   margin-bottom: 2%;
 }
+
+
+@media screen and (max-width: 900px) {
+  .barber {
+    flex-direction: column;
+  }
+
+  #personal{
+    flex-direction: column;
+  }
+
+  .card{
+    flex-direction: column;
+  }
 
 /*------------- END SECCION PERSONAL ----------------*/
 
