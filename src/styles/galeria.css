@@ -58,13 +58,6 @@ header::before {
   color: white;
 }
 
-.nav-active .nav-links li:last-child:hover,
-.nav-active .nav-links li:last-child:hover>a {
-  background-color: none;
-  border-radius: 20px;
-  color: white;
-}
-
 #toggle {
   color: white;
   background: none;
@@ -129,6 +122,44 @@ header::before {
   .nav-links{
     flex-direction: column;
   }
+  .nav-links li {
+    padding-top: 10px;
+  }
+
+  #reserva a {
+    color: white;
+    background-color: inherit;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    transition: none;
+  }
+
+  #reserva>a:hover {
+    transform: scale(1.1);
+    color: bisque;
+    background-color: inherit;
+  }
+
+  .nav-active #reserva>a:hover {
+    transform: scale(1.2);
+    color: black;
+    background-color: inherit;
+  }
+
+  .nav-active .nav-links li:not(:last-child):hover,
+  .nav-active .nav-links li:hover>a {
+  background-color: inherit;
+  border-radius: 0;
+  color: black;
+}
+
+  .nav-active #reserva a {
+    background-color: inherit;
+    color: black;
+  }
+
+  
 
   
 
