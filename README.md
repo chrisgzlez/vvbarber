@@ -33,3 +33,4 @@
 - [ ] Hacerlas responsivas (media queries)
 - [ ] Memoria corregir lo anterior
 - [ ] Memoria nuevas secciones
+- [ ] Responsividad en el footer
