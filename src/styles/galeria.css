@@ -27,6 +27,7 @@ header::before {
   right: 0;
   background-color: rgba(0, 0, 0, 0.33);
 }
+
 /*------------- END HEADER ----------------*/
 
 /*------------- NAVBAR ----------------*/
@@ -41,30 +42,63 @@ header::before {
   z-index: 1000;
 }
 
-.nav-active{
+.nav-active {
   background-color: white;
 }
 
-.nav-active .nav-links li a{
+.nav-active .nav-links li a {
   color: black;
 
 }
 
 .nav-active .nav-links li:hover,
-.nav-active .nav-links li:hover > a {
+.nav-active .nav-links li:hover>a {
   background-color: black;
   border-radius: 20px;
   color: white;
 }
 
+#toggle {
+  color: white;
+  background: none;
+  border: none;
+  display: none;
+}
+
 .nav-links {
   list-style: none;
+  display: flex;
   margin-left: auto;
 }
 
 .nav-links li {
-  display: inline-block;
   padding: 0px 20px;
+}
+
+#reserva a {
+  color: black;
+  background-color: white;
+  padding: 5px 15px;
+  text-decoration: none;
+  border-radius: 20px;
+  border: none;
+  transition: transform 0.1s ease;
+}
+
+.nav-active #reserva a {
+  background-color: black;
+  color: white;
+}
+
+#reserva>a:hover {
+  transform: scale(1.1);
+  color: bisque;
+  background-color: gray;
+}
+
+.nav-active #reserva>a:hover {
+  color: white;
+  background-color: black;
 }
 
 .nav-links li a {
@@ -73,41 +107,25 @@ header::before {
 }
 
 .nav-links li:hover,
-.nav-links li:hover > a {
+.nav-links li:hover>a {
   transform: scale(1.1);
   color: bisque;
 }
 
-.reserva {
-  padding: 0 20px;
+
+
+
+@media (max-width: 768px) {
+
+  .nav-links{
+    flex-direction: column;
+  }
+
+  
+
+
 }
 
-.reserva a {
-  display: inline-block;
-  padding: 5px 15px;
-  background-color: white;
-  color: black;
-  text-decoration: none;
-  border-radius: 20px;
-  border: none;
-  transition: transform 0.1s ease;
-}
-
-.nav-active .reserva a{
-  background-color: black;
-  color: white;
-}
-
-.reserva > a:hover {
-  transform: scale(1.1);
-  color: bisque;
-  background-color: gray;
-}
-
-.nav-active .reserva > a:hover{
-  color: white;
-  background-color: black;
-}
 /*------------- END NAVBAR ----------------*/
 
 h1 {
@@ -115,13 +133,13 @@ h1 {
   position: absolute;
   bottom: 60px;
   left: 60px;
-  align-self:flex-end;
+  align-self: flex-end;
   color: white;
   border-bottom: 3px solid white;
   width: min(50%, 40rem);
 
-  
-  
+
+
 }
 
 h2 {
@@ -166,10 +184,10 @@ h3 {
   border-radius: 4px;
   transition: transform 0.3s ease-in-out;
 
-  background-size:cover ;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
+
 }
 
 .card:hover {
@@ -180,19 +198,19 @@ h3 {
 main {
   background-color: white;
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
-  grid-auto-rows:minmax(200px,auto);
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
   grid-auto-flow: dense;
   gap: 45px;
   padding: 100px;
 }
 
 @media (min-width: 600px) {
-  .ancho{
+  .ancho {
     grid-column: span 2;
   }
 
-  .alto{
+  .alto {
     grid-row: span 2;
   }
 }
@@ -252,7 +270,7 @@ main {
   color: bisque;
 }
 
-.social-links > li {
+.social-links>li {
   margin: 0.5rem;
 }
 

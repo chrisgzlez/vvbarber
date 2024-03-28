@@ -22,8 +22,10 @@
 
 ## EFECTOS A REALIZAR
 
--   Precios: <Multicol, Ivan>
-    - Aparecen los elementos cuando scrolleamos
+ - Aparecen los elementos cuando scrolleamos
+ - Navbar Fija
+ - Fotos se amplian al hacer click
+ - Menu hamburguesa
 
 ## TODOS
 
