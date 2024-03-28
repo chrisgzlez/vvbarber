@@ -24,3 +24,10 @@
 
 -   Precios: <Multicol, Ivan>
     - Aparecen los elementos cuando scrolleamos
+
+## TODOS
+
+- [ ] Acabar todas las paginas
+- [ ] Hacerlas responsivas (media queries)
+- [ ] Memoria corregir lo anterior
+- [ ] Memoria nuevas secciones

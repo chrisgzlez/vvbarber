@@ -142,6 +142,10 @@ section{
     column-gap: 20px;
 }
 
+#tintes{
+    margin-bottom: 10%;
+}
+
 .texto{
     display: inline-block;
     position: relative;
