@@ -32,8 +32,8 @@ header::before {
 
 /*------------- NAVBAR ----------------*/
 .navbar {
-
   width: 100%;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,6 +63,7 @@ header::before {
   background: none;
   border: none;
   display: none;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -119,11 +120,31 @@ header::before {
 
 @media (max-width: 768px) {
 
+  .navbar{
+    align-items: normal;
+    height: 90px;
+
+  }
+
   .nav-links{
     flex-direction: column;
+    margin-right: 40px;
+    background-color: #2e2e2d;
+    position: fixed;
+    left: 100%;
+    top: 90px;
+    width: 100%;
+    align-items: center;
+    padding: 20px 0;
+    transition: left 0.4s;
+
   }
   .nav-links li {
     padding-top: 10px;
+  }
+  .nav-active .nav-links li a {
+    color: white;
+  
   }
 
   #reserva a {
@@ -149,14 +170,25 @@ header::before {
 
   .nav-active .nav-links li:not(:last-child):hover,
   .nav-active .nav-links li:hover>a {
-  background-color: inherit;
-  border-radius: 0;
-  color: black;
-}
+    background-color: inherit;
+    border-radius: 0;
+    color: black;
+  }
 
   .nav-active #reserva a {
     background-color: inherit;
+    color: white;
+  }
+
+  .nav-active #toggle{
     color: black;
+  }
+  #toggle {
+    display: block;
+  }
+
+  .visible{
+    left: 0;
   }
 
   
