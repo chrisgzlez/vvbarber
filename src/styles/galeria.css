@@ -11,15 +11,11 @@
 header {
   background-image: url(../media/images/background.jpg);
   background-repeat: no-repeat;
-  display: flex;
   position: relative;
-  flex-direction: column;
-  justify-content: space-between;
   background-size: cover;
   background-position: center;
   width: 100%;
   height: max(15rem, 45vh);
-  padding: 10px;
 }
 
 header::before {
@@ -35,10 +31,30 @@ header::before {
 
 /*------------- NAVBAR ----------------*/
 .navbar {
+
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: fixed;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.nav-active{
+  background-color: white;
+}
+
+.nav-active .nav-links li a{
+  color: black;
+
+}
+
+.nav-active .nav-links li:hover,
+.nav-active .nav-links li:hover > a {
+  background-color: black;
+  border-radius: 20px;
+  color: white;
 }
 
 .nav-links {
@@ -82,17 +98,25 @@ header::before {
   color: bisque;
   background-color: gray;
 }
+
+.nav-active .reserva > a:hover{
+  color: white;
+  background-color: black;
+}
 /*------------- END NAVBAR ----------------*/
 
 h1 {
   font-size: clamp(1rem, 3vw + 0.5rem, 3rem);
-  position: relative;
-  display: flex;
-  align-items: flex-end;
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  align-self:flex-end;
   color: white;
   border-bottom: 3px solid white;
   width: min(50%, 40rem);
-  margin: 0 0 3rem 4rem;
+
+  
+  
 }
 
 h2 {
