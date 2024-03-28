@@ -51,9 +51,16 @@ header::before {
 
 }
 
-.nav-active .nav-links li:hover,
+.nav-active .nav-links li:not(:last-child):hover,
 .nav-active .nav-links li:hover>a {
   background-color: black;
+  border-radius: 20px;
+  color: white;
+}
+
+.nav-active .nav-links li:last-child:hover,
+.nav-active .nav-links li:last-child:hover>a {
+  background-color: none;
   border-radius: 20px;
   color: white;
 }
@@ -75,6 +82,11 @@ header::before {
   padding: 0px 20px;
 }
 
+.nav-active #reserva a {
+  background-color: black;
+  color: white;
+}
+
 #reserva a {
   color: black;
   background-color: white;
@@ -85,20 +97,17 @@ header::before {
   transition: transform 0.1s ease;
 }
 
-.nav-active #reserva a {
-  background-color: black;
+
+.nav-active #reserva>a:hover {
+  transform: scale(1.2);
   color: white;
+  background-color: black;
 }
 
 #reserva>a:hover {
   transform: scale(1.1);
   color: bisque;
   background-color: gray;
-}
-
-.nav-active #reserva>a:hover {
-  color: white;
-  background-color: black;
 }
 
 .nav-links li a {
