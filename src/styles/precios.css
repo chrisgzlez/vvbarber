@@ -23,6 +23,20 @@ section {
     transform: translateY(50%);
 }
 
+.corte-title {
+    font-size: clamp(1rem, 1vw + 0.5rem, 3rem);
+    display: flex;
+    align-items: flex-start;
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    margin-bottom: 1rem;
+}
+.corte-precio {
+    font-size: clamp(1rem, 1vw + 0.5rem, 3rem);
+    display: flex;
+    justify-content: end;
+}
+
 section ul li {
     column-count: 2;
 }
