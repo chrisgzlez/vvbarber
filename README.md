@@ -7,12 +7,12 @@
 
 ## CSS Pages
 
--   [ ] Home: <Flexbox, Chris>
+-   [x] Home: <Flexbox, Chris>
 -   [x] Conócenos: <Grid, Ivan>
 -   [x] Galería: <Flexbox, Ivan>
 -   [x] Precios: <Multicol, Ivan>
 -   [x] Ubicación: <Float, Chris :(>
--   [ ] Reservar: Bootstrap, Chris
+-   [x] Reservar: Bootstrap, Chris
 -   [ ] Hacer media queries en todas las paginas para que sea responisva
 
 ## TODO DOCS
