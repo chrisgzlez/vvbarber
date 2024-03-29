@@ -7,15 +7,31 @@
 
 ## CSS Pages
 
--   [ ] Home: <Flexbox, Ivan>
--   [ ] Conócenos: <Grid, Ivan>
--   [ ] Galería: <Flexbox, Chris>
--   [ ] Precios: <Multicol, Ivan>
--   [ ] Ubicación: <Float, Chris :(>
--   [ ] Reservar: Bootstrap
+-   [ ] Home: <Flexbox, Chris>
+-   [x] Conócenos: <Grid, Ivan>
+-   [x] Galería: <Flexbox, Ivan>
+-   [x] Precios: <Multicol, Ivan>
+-   [x] Ubicación: <Float, Chris :(>
+-   [ ] Reservar: Bootstrap, Chris
+-   [ ] Hacer media queries en todas las paginas para que sea responisva
 
 ## TODO DOCS
 
 -   [ ] Crear apartado de HTML en el documento
 -   [ ] Crear apartado de CSS en el documento
 -   [ ] Crear apartado de cambios
+
+## EFECTOS A REALIZAR
+
+-   Aparecen los elementos cuando scrolleamos
+-   Navbar Fija
+-   Fotos se amplian al hacer click
+-   Menu hamburguesa
+
+## TODOS
+
+-   [ ] Acabar todas las paginas
+-   [ ] Hacerlas responsivas (media queries)
+-   [ ] Memoria corregir lo anterior
+-   [ ] Memoria nuevas secciones
+-   [ ] Responsividad en el footer
