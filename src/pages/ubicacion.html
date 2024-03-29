@@ -5,23 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VVBarbería</title>
     <link rel="stylesheet" href="../styles/ubicacion.css" />
+    <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <figure class="logo">
-          <a href="/index.html">
-            <img src="/media/images/logo.svg" alt="Logo Barbería Vadillos Vilar" />
-          </a>
-        </figure>
-        <ul class="nav-links">
-          <li><a href="/pages/conocenos.html">Conócenos</a></li>
-          <li><a href="/pages/galeria.html">Galería</a></li>
-          <li><a href="/pages/precios.html">Precios</a></li>
-          <li><a href="/pages/ubicacion.html">Ubicación</a></li>
-        </ul>
-        <p class="reserva"><a href="/pages/reserva.html">Reservar una Cita</a></p>
-      </nav>
+      <div id="navbar"></div>
 
       <h1>Visítanos</h1>
     </header>
@@ -48,49 +36,19 @@
       </iframe>
     </main>
 
-    <footer class="footer">
-      <figure class="logo">
-        <a href="/index.html">
-          <img src="/media/images/logo.svg" alt="Logo Barbería Vadillos Vilar" />
-        </a>
-      </figure>
-      <p><a href="https://maps.app.goo.gl/NTLTnHrJQid7dQME6">Avenida Montereal 7, Baiona Galicia, España 986357890</a></p>
-      <ul class="footer-links">
-        <div class="links-block">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/pages/conocenos.html">Conócenos</a></li>
-          <li><a href="/pages/galeria.html">Galería</a></li>
-        </div>
-        <hr />
-        <div class="links-block">
-          <li><a href="/pages/precios.html">Precios</a></li>
-          <li><a href="/pages/ubicacion.html">Ubicación</a></li>
-          <li><a href="/pages/reserva.html">Reservar</a></li>
-        </div>
-      </ul>
+    <div id="footer"></div>
 
-      <ul class="social-links">
-        <!-- Instagram -->
-        <li>
-          <a href="/index.html">
-            <img class="icon" src="/media/images/logos/instagram.png" alt="Enlace a nuestra página de Instagram" />
-          </a>
-        </li>
-
-        <!-- Twitter -->
-        <li>
-          <a href="/index.html">
-            <img class="icon" src="/media/images/logos/twitter.png" alt="Enlace a nuestra página de Twitter" />
-          </a>
-        </li>
-
-        <!-- TikTok -->
-        <li>
-          <a href="/index.html">
-            <img class="icon" src="/media/images/logos/tiktok.png" alt="Enlace a nuestra página de Tiktok" />
-          </a>
-        </li>
-      </ul>
-    </footer>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#navbar").load("/pages/navbar.html");
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#footer").load("/pages/footer.html");
+      });
+    </script>
   </body>
 </html>

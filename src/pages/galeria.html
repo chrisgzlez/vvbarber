@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VVBarbería</title>
     <link rel="stylesheet" href="../styles/galeria.css" />
+    <link rel="stylesheet" href="/index.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -12,23 +13,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <figure class="logo">
-          <a href="/index.html">
-            <img src="/media/images/logo.svg" alt="Logo Barbería Vadillos Vilar" />
-          </a>
-        </figure>
-        <button id="toggle">
-          <span class="material-symbols-outlined"> menu </span>
-        </button>
-        <ul class="nav-links">
-          <li><a href="/pages/conocenos.html">Conócenos</a></li>
-          <li><a href="/pages/galeria.html">Galería</a></li>
-          <li><a href="/pages/precios.html">Precios</a></li>
-          <li><a href="/pages/ubicacion.html">Ubicación</a></li>
-          <li id="reserva"><a href="/pages/reserva.html">Reservar una Cita</a></li>
-        </ul>
-      </nav>
+      <div id="navbar"></div>
       <h1>Galería</h1>
     </header>
     <main>
@@ -44,51 +29,19 @@
       <div class="card alto" style="background-image: url(../media/images/cortes/cortes_006.jpg)"></div>
       <div class="card ancho alto" style="background-image: url(../media/images/cortes/cortes_003.jpg)"></div>
     </main>
-    <footer class="footer">
-      <figure class="logo">
-        <a href="/index.html">
-          <img src="/media/images/logo.svg" alt="Logo Barbería Vadillos Vilar" />
-        </a>
-      </figure>
-      <p><a href="https://maps.app.goo.gl/NTLTnHrJQid7dQME6">Avenida Montereal 7, Baiona Galicia, España 986357890</a></p>
-      <ul class="footer-links">
-        <div class="links-block">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/pages/conocenos.html">Conócenos</a></li>
-          <li><a href="/pages/galeria.html">Galería</a></li>
-        </div>
-        <hr />
-        <div class="links-block">
-          <li><a href="/pages/precios.html">Precios</a></li>
-          <li><a href="/pages/ubicacion.html">Ubicación</a></li>
-          <li><a href="/pages/reserva.html">Reservar</a></li>
-        </div>
-      </ul>
+    <div id="footer"></div>
 
-      <ul class="social-links">
-        <!-- Instagram -->
-        <li>
-          <a href="/index.html">
-            <img class="icon" src="/media/images/logos/instagram.png" alt="Enlace a nuestra página de Instagram" />
-          </a>
-        </li>
-
-        <!-- Twitter -->
-        <li>
-          <a href="/index.html">
-            <img class="icon" src="/media/images/logos/twitter.png" alt="Enlace a nuestra página de Twitter" />
-          </a>
-        </li>
-
-        <!-- TikTok -->
-        <li>
-          <a href="/index.html">
-            <img class="icon" src="/media/images/logos/tiktok.png" alt="Enlace a nuestra página de Tiktok" />
-          </a>
-        </li>
-      </ul>
-    </footer>
-    <script src="/js/navbar.js"></script>
-    <script src="/js/toggle.js"></script>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#navbar").load("/pages/navbar.html");
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#footer").load("/pages/footer.html");
+      });
+    </script>
   </body>
 </html>
