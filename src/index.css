@@ -253,6 +253,9 @@ ul {
         height: 40vh;
         margin: 0.5rem;
     }
+    .carrusel-links {
+        display: none;
+    }
 }
 
 section.equipo {
@@ -293,9 +296,9 @@ section.equipo ul {
 }
 
 /*------------- END SERVICIOS ----------------*/
+
 .footer {
     background-color: #2e2e2d;
-    height: 20vh;
     height: max(10rem, 20vh);
     display: flex;
     flex-direction: row;
@@ -346,4 +349,15 @@ section.equipo ul {
 
 .icon:hover {
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .footer > * {
+        margin: 0.25rem 0;
+    }
 }
