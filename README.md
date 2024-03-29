@@ -20,13 +20,16 @@
 -   [ ] Crear apartado de HTML en el documento
 -   [ ] Crear apartado de CSS en el documento
 -   [ ] Crear apartado de cambios
+-   [ ] Mapa de Etiquetas de todas las paginas (DOMVisualizer)
+-   [ ] Diagrama de Carpetas
+-   [ ] Capturas de las Paginsa + Diagrama de los boxes usados
 
 ## EFECTOS A REALIZAR
 
--   Aparecen los elementos cuando scrolleamos
--   Navbar Fija
--   Fotos se amplian al hacer click
--   Menu hamburguesa
+-   [ ] Aparecen los elementos cuando scrolleamos
+-   [x] Navbar Fija
+-   [ ] Fotos se amplian al hacer click
+-   [x] Menu hamburguesa
 
 ## TODOS
 
@@ -35,3 +38,15 @@
 -   [ ] Memoria corregir lo anterior
 -   [ ] Memoria nuevas secciones
 -   [ ] Responsividad en el footer
+-   [ ] Añadir hiperenalces en los carruseles del home
+
+## Requisitos Entrega
+
+-   [ ] 5 Accesos al DOM distintos
+-   [ ] Eventos:
+    -   [x] Scroll
+    -   [x] onClick
+    -   [ ] onLoad o Submit
+-   [ ] Usos de JQuery: Navbar y Footer
+-   [ ] Uso de JS6
+-   [ ] Carga de contenido formato JSON o XML: cortes de pelo + imagenes galeria
