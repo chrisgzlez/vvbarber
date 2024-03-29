@@ -4,115 +4,181 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VVBarbería</title>
+    <link rel="stylesheet" href="../styles/reserva.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
+
   <body>
     <header>
-      <nav>
-        <figure>
+      <nav class="navbar">
+        <figure class="logo">
           <a href="/index.html">
-            <img src="/media/images/logo.svg" alt="Logo Barbería Vadillos Vilar" width="50px" height="50px" />
+            <img src="/media/images/logo.svg" alt="Logo Barbería Vadillos Vilar" />
           </a>
         </figure>
-        <ul>
+        <button id="toggle">
+          <span class="material-symbols-outlined"> menu </span>
+        </button>
+        <ul class="nav-links">
           <li><a href="/pages/conocenos.html">Conócenos</a></li>
           <li><a href="/pages/galeria.html">Galería</a></li>
           <li><a href="/pages/precios.html">Precios</a></li>
           <li><a href="/pages/ubicacion.html">Ubicación</a></li>
+          <li id="reserva"><a href="/pages/reserva.html">Reservar una Cita</a></li>
         </ul>
-        <p><a href="/pages/reserva.html">Reservar una Cita</a></p>
       </nav>
-
-      <h1>Visítanos</h1>
+      <h1>Haz tu Reserva</h1>
     </header>
-    <main>
-      <h2>Contactanos</h2>
-      <p>Le proporcionamos los siguientes datos para que pueda contactar con nosotros</p>
-      <dl>
-        <dt>Dirección</dt>
-        <dd>Avenida Monterreal, 7 Baiona, Galicia, España</dd>
-        <dt>Horario</dt>
-        <dd>
-          <ul>
-            <li>
-              <p>Lunes-Viernes</p>
-              <p>10:00 - 14:00</p>
-              <p>16:00 - 20:00</p>
-            </li>
-            <li>
-              <p>Sabados</p>
-              <p>10:00 - 14:00</p>
-            </li>
-            <li>
-              <p>Domingos y Festivos</p>
-              <p><strong>Cerrado</strong></p>
-            </li>
-          </ul>
-        </dd>
-        <dt>Teléfono</dt>
-        <dd>+34 986 35 78 90</dd>
-      </dl>
-    </main>
-    <aside>
-      <form method="post">
-        <fieldset>
-          <legend>Con quién te cortas el pelo</legend>
-          <label><input name="barber" required type="radio" /> Pablo López</label>
-          <label><input name="barber" type="radio" /> Pedro Echevarría</label>
-          <label><input name="barber" type="radio" /> Nacho García</label>
-        </fieldset>
-        <fieldset>
-          <legend>Qué dia te viene bien</legend>
-          <input required type="date" />
-        </fieldset>
-        <fieldset>
-          <legend>A qué hora te viene bien</legend>
-          <input required type="time" />
-        </fieldset>
-        <fieldset>
-          <legend>Cómo te llamas</legend>
-          <label>Nombre: <input required type="text" autocomplete="given-name" placeholder="Sergio" /></label>
-          <label>Apellidos: <input type="text" autocomplete="family-name" placeholder="Vadillos Vilar" /></label>
-        </fieldset>
-        <button>Reservar</button>
-      </form>
-    </aside>
-    <footer>
-      <figure>
+
+    <div class="container-xl my-5">
+      <div class="row">
+        <main class="col-lg-6 pe-lg-5">
+          <h2>Informacion de Contacto</h2>
+          <p>Le proporcionamos los siguientes datos para que pueda contactar con nosotros</p>
+          <dl>
+            <dt class="fs-5">Dirección</dt>
+            <dd class="fs-6 text-secondary">Avenida Monterreal, 7 Baiona, Galicia, España</dd>
+            <dt class="fs-5">Horario</dt>
+            <dd>
+              <ul class="d-flex justify-content-between list-group list-group-horizontal-sm">
+                <li class="list-group-item d-flex flex-column flex-fill align-items-center border">
+                  <p class="fs-6 text-primary">Lunes - Viernes</p>
+                  <p class="text-secondary">10:00-14:00</p>
+                  <p class="text-secondary">16:00-20:00</p>
+                </li>
+                <li class="list-group-item d-flex flex-column flex-fill align-items-center border">
+                  <p class="fs-6 text-primary">Sábados</p>
+                  <p class="text-secondary">10:00-14:00</p>
+                </li>
+                <li class="list-group-item d-flex flex-column flex-fill align-items-center border">
+                  <p class="fs-6 text-primary">Domingos y Festivos</p>
+                  <p class="fw-bold">Cerrado</p>
+                </li>
+              </ul>
+            </dd>
+            <dt class="fs-4">Teléfono</dt>
+            <dd>+34 986 35 78 90</dd>
+          </dl>
+        </main>
+
+        <aside class="col-lg-6 ps-lg-5">
+          <form method="post" class="py-3 container border border-2">
+            <fieldset class="mb-3">
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroup-sizing-default">Barbero</span>
+                <select class="form-select" aria-label="Barber select">
+                  <option selected>Elige tu barbero</option>
+                  <option value="1">Pablo Lopez</option>
+                  <option value="2">Pedro Echevarría</option>
+                  <option value="3">Nacho García</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset class="mb-3">
+              <div class="input-group">
+                <span class="input-group-text w-25" id="inputGroup-sizing-default">Dia</span>
+                <input required type="date" class="ps-1 w-75 border-1" />
+              </div>
+            </fieldset>
+
+            <fieldset class="row mb-3">
+              <div class="input-group">
+                <span class="input-group-text w-25" id="inputGroup-sizing-default">Hora</span>
+                <!-- Cargar dinamicamente en funcion de la fecha seleccionada -->
+                <div class="form-floating w-75">
+                  <select class="form-select" id="horaCita" aria-label="Seleccionar hora de la cita">
+                    <option selected>Selecciona Hora de la Cita</option>
+                    <option value="1">10:00-10:30</option>
+                    <option value="2">10:30-11:00</option>
+                    <option value="3">11:00-11:30</option>
+                  </select>
+                  <label for="horaCita">Selecciona la Hora de Tu Cita</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="input-group mb-3">
+              <span class="input-group-text w-25" id="inputGroup-sizing-default">Nombre</span>
+              <div class="form-floating w-75">
+                <input class="form-control rounded-3" id="clientName" required type="text" autocomplete="given-name" placeholder="Sergio" />
+                <label for="clientName" class="fst-italic fw-light">Sergio</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="input-group mb-3">
+              <span class="input-group-text w-25" id="inputGroup-sizing-default">Apellidos</span>
+              <div class="form-floating w-75">
+                <input class="form-control rounded-3" id="clientName" required type="text" autocomplete="given-name" placeholder="Vadillos Vilar" />
+                <label for="clientName" class="fst-italic fw-light">Vadillos Vilar</label>
+              </div>
+            </fieldset>
+
+            <div class="row">
+              <button class="btn btn-primary ms-auto w-25">Reservar</button>
+            </div>
+          </form>
+        </aside>
+      </div>
+      <!-- End of Row -->
+    </div>
+    <!-- End of Container -->
+
+    <footer class="footer">
+      <figure class="logo">
         <a href="/index.html">
-          <img src="/media/images/logo.svg" alt="Logo Barbería Vadillos Vilar" width="50px" height="50px" />
+          <img src="/media/images/logo.svg" alt="Logo Barbería Vadillos Vilar" />
         </a>
       </figure>
-      <p>Avenida Montereal,7 Baiona Galicia,España 986357890</p>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/pages/conocenos.html">Conócenos</a></li>
-        <li><a href="/pages/galeria.html">Galería</a></li>
-        <li><a href="/pages/precios.html">Precios</a></li>
-        <li><a href="/pages/ubicacion.html">Ubicación</a></li>
-        <li><a href="/pages/reserva.html">Reservar una Cita</a></li>
+      <p><a href="https://maps.app.goo.gl/NTLTnHrJQid7dQME6">Avenida Montereal 7, Baiona Galicia, España 986357890</a></p>
+      <ul class="footer-links">
+        <div class="links-block">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/conocenos.html">Conócenos</a></li>
+          <li><a href="/pages/galeria.html">Galería</a></li>
+        </div>
+        <hr />
+        <div class="links-block">
+          <li><a href="/pages/precios.html">Precios</a></li>
+          <li><a href="/pages/ubicacion.html">Ubicación</a></li>
+          <li><a href="/pages/reserva.html">Reservar</a></li>
+        </div>
       </ul>
 
-      <ul>
+      <ul class="social-links">
         <!-- Instagram -->
+        <li>
+          <a href="/index.html">
+            <img class="icon" src="/media/images/logos/instagram.png" alt="Enlace a nuestra página de Instagram" />
+          </a>
+        </li>
 
-        <li>
-          <a href="/index.html">
-            <img src="mozilla-image.png" alt="Enlace a nuestra página de Instagram" />
-          </a>
-        </li>
-        <!-- Facebook -->
-        <li>
-          <a href="/index.html">
-            <img src="mozilla-image.png" alt="Enlace a nuestra página de Facebook" />
-          </a>
-        </li>
         <!-- Twitter -->
         <li>
           <a href="/index.html">
-            <img src="mozilla-image.png" alt="Enlace a nuestra página de Twitter" />
+            <img class="icon" src="/media/images/logos/twitter.png" alt="Enlace a nuestra página de Twitter" />
+          </a>
+        </li>
+
+        <!-- TikTok -->
+        <li>
+          <a href="/index.html">
+            <img class="icon" src="/media/images/logos/tiktok.png" alt="Enlace a nuestra página de Tiktok" />
           </a>
         </li>
       </ul>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
