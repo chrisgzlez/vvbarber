@@ -197,9 +197,32 @@ ul {
     scroll-snap-type: x mandatory;
 }
 
+.carrusel a {
+    color: inherit;
+    display: block;
+    text-decoration: none;
+    margin: 1.5rem;
+}
+
+.carrusel-links li {
+    display: inline-flex;
+}
+.carrusel-links li a {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 0.25rem double black;
+    background-color: #debe66;
+    margin: 0 0.25rem;
+}
+
+.carrusel-links a:hover {
+    transform: scale(1.1);
+}
+
 .service-card {
     width: 30vw;
-    height: 75vh;
+    height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -208,7 +231,6 @@ ul {
     flex-flow: column nowrap;
     justify-content: flex-end;
     padding: 1.5rem;
-    margin: 1.5rem;
 
     /*Scrollling */
     scroll-snap-align: center;
