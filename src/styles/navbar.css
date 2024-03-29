@@ -1,0 +1,154 @@
+/*------------- NAVBAR ----------------*/
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.nav-active {
+    background-color: white;
+}
+
+.nav-active .nav-links li a {
+    color: black;
+}
+
+.nav-active .nav-links li:not(:last-child):hover,
+.nav-active .nav-links li:hover > a {
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+}
+
+#toggle {
+    color: white;
+    background: none;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links li {
+    padding: 0px 20px;
+}
+
+.nav-active #reserva a {
+    background-color: black;
+    color: white;
+}
+
+#reserva a {
+    color: black;
+    background-color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: none;
+    transition: transform 0.1s ease;
+}
+
+.nav-active #reserva > a:hover {
+    transform: scale(1.2);
+    color: white;
+    background-color: black;
+}
+
+#reserva > a:hover {
+    transform: scale(1.1);
+    color: bisque;
+    background-color: gray;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li:hover,
+.nav-links li:hover > a {
+    transform: scale(1.1);
+    color: bisque;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        align-items: normal;
+        height: 90px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-right: 40px;
+        background-color: #2e2e2d;
+        position: fixed;
+        left: 100%;
+        top: 90px;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+        transition: left 0.4s;
+    }
+    .nav-links li {
+        padding-top: 10px;
+    }
+    .nav-active .nav-links li a {
+        color: white;
+    }
+
+    #reserva a {
+        color: white;
+        background-color: inherit;
+        padding: 0;
+        border-radius: 0;
+        border: none;
+        transition: none;
+    }
+
+    #reserva > a:hover {
+        transform: scale(1.1);
+        color: bisque;
+        background-color: inherit;
+    }
+
+    .nav-active #reserva > a:hover {
+        transform: scale(1.2);
+        color: black;
+        background-color: inherit;
+    }
+
+    .nav-active .nav-links li:not(:last-child):hover,
+    .nav-active .nav-links li:hover > a {
+        background-color: inherit;
+        border-radius: 0;
+        color: black;
+    }
+
+    .nav-active #reserva a {
+        background-color: inherit;
+        color: white;
+    }
+
+    .nav-active #toggle {
+        color: black;
+    }
+    #toggle {
+        display: block;
+    }
+
+    .visible {
+        left: 0;
+    }
+}
+
+/*------------- END NAVBAR ----------------*/

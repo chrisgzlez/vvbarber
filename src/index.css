@@ -1,3 +1,6 @@
+@import url("./styles/navbar.css");
+@import url("./styles/footer.css");
+
 * {
     margin: 0px;
     box-sizing: border-box;
@@ -39,57 +42,6 @@ header::before {
     background-color: rgba(0, 0, 0, 0.33);
 }
 /*------------- END HEADER ----------------*/
-
-/*------------- NAVBAR ----------------*/
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
-.nav-links {
-    list-style: none;
-    margin-left: auto;
-}
-
-.nav-links li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.nav-links li:hover,
-.nav-links li:hover > a {
-    transform: scale(1.1);
-    color: bisque;
-}
-
-.reserva {
-    padding: 0 20px;
-}
-
-.reserva a {
-    display: inline-block;
-    padding: 5px 15px;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    border-radius: 20px;
-    border: none;
-    transition: transform 0.1s ease;
-}
-
-.reserva > a:hover {
-    transform: scale(1.1);
-    color: bisque;
-    background-color: gray;
-}
-/*------------- END NAVBAR ----------------*/
 
 /*------------- HEADERS ----------------*/
 hgroup.home-title {
@@ -296,68 +248,3 @@ section.equipo ul {
 }
 
 /*------------- END SERVICIOS ----------------*/
-
-.footer {
-    background-color: #2e2e2d;
-    height: max(10rem, 20vh);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-}
-
-.footer * {
-    color: #a2a29d;
-}
-
-.footer ul {
-    list-style: none;
-}
-
-.social-links {
-    display: flex;
-    flex-direction: row;
-}
-
-.footer-links {
-    display: flex;
-}
-
-.links-block {
-    display: flex;
-    flex-direction: column;
-    margin: 0 2rem;
-    justify-content: center;
-}
-
-.footer a {
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: bisque;
-}
-
-.social-links > li {
-    margin: 0.5rem;
-}
-
-.icon {
-    width: 2rem;
-}
-
-.icon:hover {
-    transform: scale(1.1);
-}
-
-@media screen and (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        height: 100%;
-    }
-
-    .footer > * {
-        margin: 0.25rem 0;
-    }
-}
