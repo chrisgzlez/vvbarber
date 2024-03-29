@@ -33,6 +33,7 @@
 
 ## TODOS
 
+-   [ ] Hacer una hoja principal con todos los estilos y añadirlo en las demás hojas
 -   [ ] Acabar todas las paginas
 -   [ ] Hacerlas responsivas (media queries)
 -   [ ] Memoria corregir lo anterior
