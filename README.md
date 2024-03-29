@@ -46,7 +46,7 @@
 -   [ ] Memoria nuevas secciones
 -   [x] Responsividad en el footer
 -   [x] Añadir hiperenalces en los carruseles del home
-    -   [ ] Hiperenlaces de Los barberos [chris]
+    -   [x] Hiperenlaces de Los barberos [chris]
 -   [ ] Fixear los headings estilos [chris]
 
 ## Requisitos Entrega
