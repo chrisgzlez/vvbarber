@@ -1,20 +1,16 @@
 /*------------- CONOCENOS ----------------*/
 
+section {
+    padding: 1.5rem 15vw;
+}
 /*------------- SECCION HISTORIA ----------------*/
 
 #historia {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
     flex-direction: column;
-    height: 100vh;
-}
-
-#historia > h2 {
-    display: flex;
-    align-items: center;
-    margin-top: 100px;
+    background-color: var(--color-primary);
 }
 
 .card {
@@ -27,7 +23,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10%;
     height: 100%;
     width: 100%;
 }
@@ -44,7 +39,7 @@
     width: 100%;
     flex-direction: column;
     display: flex;
-    margin: auto 100px auto 50px;
+    align-items: center;
 }
 
 .texto > p {
@@ -56,53 +51,42 @@
 /*------------- SECCION PERSONAL ----------------*/
 
 #personal {
+    background-color: var(--color-light);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 8%;
     flex-direction: column;
-}
-
-#personal > h2 {
-    display: flex;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 10%;
 }
 
 .barber {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1.5rem 0;
 }
 
 .barber figure {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10%;
     height: 4%;
     width: 40%;
+    margin: 0 2rem;
 }
 
-.barber #barber2 {
-    margin-right: 10%;
-    margin-left: 0;
+.barber-reverse {
+    flex-direction: row-reverse !important;
 }
 
 .barber figure img {
-    object-fit: cover;
-    object-position: 90% 50%;
-    width: 60%;
+    width: 30vw;
     height: 60%;
-    padding: 10px;
 }
 
 .barber .texto {
-    width: 50%;
+    margin-top: 1rem;
     flex-direction: column;
     display: flex;
-    margin: auto 100px auto 100px;
 }
 
 .texto > p {
@@ -112,6 +96,18 @@
 @media screen and (max-width: 900px) {
     .barber {
         flex-direction: column;
+    }
+
+    .barber-reverse {
+        flex-direction: column !important;
+    }
+
+    .barber h3 {
+        align-self: center;
+    }
+
+    .barber figure img {
+        width: 50vw;
     }
 
     #personal {
