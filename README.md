@@ -13,41 +13,56 @@
 -   [x] Precios: <Multicol, Ivan>
 -   [x] Ubicación: <Float, Chris :(>
 -   [x] Reservar: Bootstrap, Chris
--   [ ] Hacer media queries en todas las paginas para que sea responisva
+-   [x] Hacer media queries en todas las paginas para que sea responisva
 
 ## TODO DOCS
 
 -   [ ] Crear apartado de HTML en el documento
--   [ ] Crear apartado de CSS en el documento
+-   [ ] Crear apartado de CSS en el documento [Chris]
+-   [ ] Crear apartado de Javascript en el documento [Chris]
 -   [ ] Crear apartado de cambios
 -   [ ] Mapa de Etiquetas de todas las paginas (DOMVisualizer)
 -   [ ] Diagrama de Carpetas
--   [ ] Capturas de las Paginsa + Diagrama de los boxes usados
 
 ## EFECTOS A REALIZAR
 
--   [ ] Aparecen los elementos cuando scrolleamos
 -   [x] Navbar Fija
 -   [ ] Fotos se amplian al hacer click
 -   [x] Menu hamburguesa
+-   [x] Footer
+-   [x] Navbar
+-   [ ] Formulario Rellenar de forma incremental
+-   [ ] Formulario notification
+-   [ ] Carga dinamica de elementos
 
 ## TODOS
 
--   [ ] Hacer una hoja principal con todos los estilos y añadirlo en las demás hojas
--   [ ] Acabar todas las paginas
--   [ ] Hacerlas responsivas (media queries)
--   [ ] Memoria corregir lo anterior
+-   [x] Hacer una hoja principal con todos los estilos y añadirlo en las demás hojas
+-   [x] Acabar todas las paginas
+-   [x] Hacerlas responsivas (media queries)
+    -   [ ] Precios
+    -   [ ] Conocenos [Chris]
+-   [x] Memoria corregir lo anterior
 -   [ ] Memoria nuevas secciones
--   [ ] Responsividad en el footer
--   [ ] Añadir hiperenalces en los carruseles del home
+-   [x] Responsividad en el footer
+-   [x] Añadir hiperenalces en los carruseles del home
+    -   [ ] Hiperenlaces de Los barberos [chris]
+-   [ ] Fixear los headings estilos [chris]
 
 ## Requisitos Entrega
 
 -   [ ] 5 Accesos al DOM distintos
+    -   [x] QuerySelector
+    -   [x] GetElementById
+    -   [ ] GetClass
+    -   [ ] Get tag
+    -   [ ] QuerySelectorAll
 -   [ ] Eventos:
     -   [x] Scroll
     -   [x] onClick
-    -   [ ] onLoad o Submit
--   [ ] Usos de JQuery: Navbar y Footer
--   [ ] Uso de JS6
--   [ ] Carga de contenido formato JSON o XML: cortes de pelo + imagenes galeria
+    -   [ ] Submit
+-   [x] Usos de JQuery: Navbar y Footer
+-   [x] Uso de JS6
+-   [ ] Carga de contenido formato JSON o XML:
+    -   [ ] cortes de peloa
+    -   [ ] horas de trabajo
