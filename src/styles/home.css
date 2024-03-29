@@ -189,6 +189,14 @@ section.equipo ul {
     margin: 0 1.5rem;
     padding-bottom: 1rem;
 }
+.barber-card a {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
 
 .barber-card figcaption {
     font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem);
