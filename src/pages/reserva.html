@@ -56,33 +56,37 @@
           <form method="post" class="py-3 container border border-2">
             <fieldset class="mb-3">
               <div class="input-group">
-                <span class="input-group-text" id="inputGroup-sizing-default">Barbero</span>
-                <select class="form-select" aria-label="Barber select">
+                <span class="input-group-text required">Barbero</span>
+                <select onchange="enableFormField('fechaCita')" class="form-select" name="barber" aria-label="Barber select">
                   <option selected>Elige tu barbero</option>
-                  <option value="1">Pablo Lopez</option>
-                  <option value="2">Pedro Echevarría</option>
-                  <option value="3">Nacho García</option>
+                  <option value="Pablo Lopez">Pablo Lopez</option>
+                  <option value="Pedro Echevarría">Pedro Echevarría</option>
+                  <option value="Nacho García">Nacho García</option>
                 </select>
               </div>
             </fieldset>
 
             <fieldset class="mb-3">
               <div class="input-group">
-                <span class="input-group-text w-25" id="inputGroup-sizing-default">Dia</span>
-                <input required type="date" class="ps-1 w-75 border-1" />
+                <span class="input-group-text w-25 required">Dia</span>
+                <input
+                  required
+                  onchange="isValidDate('fechaCita') && enableFormField('horaCita')"
+                  name="fechaCita"
+                  disabled
+                  type="date"
+                  class="ps-1 w-75 border-1 disabled"
+                />
               </div>
             </fieldset>
 
             <fieldset class="row mb-3">
               <div class="input-group">
-                <span class="input-group-text w-25" id="inputGroup-sizing-default">Hora</span>
+                <span class="input-group-text w-25 required">Hora</span>
                 <!-- Cargar dinamicamente en funcion de la fecha seleccionada -->
                 <div class="form-floating w-75">
-                  <select class="form-select" id="horaCita" aria-label="Seleccionar hora de la cita">
+                  <select disabled required class="form-select disabled" name="horaCita" aria-label="Seleccionar hora de la cita">
                     <option selected>Selecciona Hora de la Cita</option>
-                    <option value="1">10:00-10:30</option>
-                    <option value="2">10:30-11:00</option>
-                    <option value="3">11:00-11:30</option>
                   </select>
                   <label for="horaCita">Selecciona la Hora de Tu Cita</label>
                 </div>
@@ -90,23 +94,23 @@
             </fieldset>
 
             <fieldset class="input-group mb-3">
-              <span class="input-group-text w-25" id="inputGroup-sizing-default">Nombre</span>
+              <span class="input-group-text w-25 required">Nombre</span>
               <div class="form-floating w-75">
-                <input class="form-control rounded-3" id="clientName" required type="text" autocomplete="given-name" placeholder="Sergio" />
-                <label for="clientName" class="fst-italic fw-light">Sergio</label>
+                <input class="form-control rounded-3" name="clientName" required type="text" autocomplete="given-name" placeholder="Sergio" />
+                <label class="fst-italic fw-light">Sergio</label>
               </div>
             </fieldset>
 
             <fieldset class="input-group mb-3">
-              <span class="input-group-text w-25" id="inputGroup-sizing-default">Apellidos</span>
+              <span class="input-group-text w-25">Apellidos</span>
               <div class="form-floating w-75">
-                <input class="form-control rounded-3" id="clientName" required type="text" autocomplete="given-name" placeholder="Vadillos Vilar" />
-                <label for="clientName" class="fst-italic fw-light">Vadillos Vilar</label>
+                <input class="form-control rounded-3" name="clientApellidos" type="text" autocomplete="given-name" placeholder="Vadillos Vilar" />
+                <label class="fst-italic fw-light">Vadillos Vilar</label>
               </div>
             </fieldset>
 
             <div class="row">
-              <button class="btn btn-primary ms-auto w-25">Reservar</button>
+              <button class="btn btn-primary ms-auto w-25" type="submit">Reservar</button>
             </div>
           </form>
         </aside>
@@ -117,6 +121,7 @@
 
     <div id="footer"></div>
 
+    <script src="/js/reserva.js"></script>
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>

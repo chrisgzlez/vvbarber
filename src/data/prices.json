@@ -1,0 +1,63 @@
+[
+    {
+        "titulo": "CORTES DE PELO",
+        "servicios": [
+            { "titulo": "Corte de pelo básico", "precio": "15€" },
+            { "titulo": "Corte Rapado", "precio": "10€" },
+            { "titulo": "Corte y Lavado", "precio": "17€" },
+            { "titulo": "Cambio de look", "precio": "20€" }
+        ],
+        "imagen": "/media/images/cortes/cortes_006.jpg",
+        "id": "cortes"
+    },
+    {
+        "titulo": "DEGRADADOS",
+        "servicios": [
+            { "titulo": "Fade", "precio": "15€" },
+            { "titulo": "Tupper Fade", "precio": "16€" },
+            { "titulo": "Skin Fade", "precio": "18€" },
+            { "titulo": "Fade con diseño", "precio": "20€" }
+        ],
+        "imagen": "/media/images/cortes/cortes_004.jpg",
+        "id": "degradados"
+    },
+    {
+        "titulo": "CORTE PARA NIÑOS",
+        "servicios": [
+            { "titulo": "Menores de 5", "precio": "7€" },
+            { "titulo": "Menores de 10", "precio": "10€" },
+            { "titulo": "Menores de 12", "precio": "12€" }
+        ],
+        "imagen": "/media/images/cortes/cortes_005.jpg",
+        "id": "corte_niños"
+    },
+    {
+        "titulo": "RECORTES DE BARBA",
+        "servicios": [
+            { "titulo": "Recorte de bigote", "precio": "7€" },
+            { "titulo": "Recorte de barba", "precio": "10€" },
+            { "titulo": "Recorte y tratamiento", "precio": "18€" }
+        ],
+        "imagen": "/media/images/barbas/barba_001.jpg",
+        "id": "barbas"
+    },
+    {
+        "titulo": "AFEITADOS",
+        "servicios": [
+            { "titulo": "Afeitado de bigote", "precio": "7€" },
+            { "titulo": "Afeitado de barba", "precio": "10€" },
+            { "titulo": "Afeitado de cabeza", "precio": "15€" }
+        ],
+        "imagen": "/media/images/services/service_001.png",
+        "id": "afeitados"
+    },
+    {
+        "titulo": "TINTES",
+        "servicios": [
+            { "titulo": "Decoloración", "precio": "30€" },
+            { "titulo": "Tinte", "precio": "30€" }
+        ],
+        "imagen": "/media/images/cortes/cortes_003.jpg",
+        "id": "tintes"
+    }
+]
