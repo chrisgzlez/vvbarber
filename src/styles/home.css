@@ -49,6 +49,8 @@ hgroup.home-title h1 {
     color: var(--color-secondary);
     border-bottom: 3px solid var(--color-secondary);
     width: 100%;
+    left: 0;
+    bottom: 2rem;
 }
 
 hgroup.home-title p {
