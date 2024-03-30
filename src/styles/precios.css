@@ -2,7 +2,7 @@
 
 section {
     column-count: 2;
-    padding: 8rem 1rem 1rem 1rem;
+    padding: 8rem 1rem 8rem 1rem;
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -11,16 +11,11 @@ section {
     column-gap: 20px;
 }
 
-#tintes {
-    margin-bottom: 10%;
-}
-
 .texto {
     display: inline-block;
     position: relative;
     margin: 0 auto;
-    top: 50%;
-    transform: translateY(50%);
+    transform: translateY(100%);
 }
 
 .corte-title {
@@ -55,4 +50,19 @@ section figure img {
     padding: 10px;
 }
 
+@media (max-width: 767px) {
+    section {
+        column-count: 1;
+        padding: 3rem 1rem 3rem 1rem;
+    }
+
+    .texto {
+        top: none;
+        transform: none;
+    }
+
+    section figure {
+        margin: 5% auto;
+    }
+}
 /*------------- END PRECIOS ----------------*/

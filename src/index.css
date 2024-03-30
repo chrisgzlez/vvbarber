@@ -43,8 +43,8 @@ h1 {
     bottom: 60px;
     left: 60px;
     font-size: clamp(1rem, 3vw + 0.5rem, 3rem);
-    color: var(--color-secondary);
-    border-bottom: 3px solid var(--color-secondary);
+    color: var(--color-light);
+    border-bottom: 3px solid var(--color-light);
     width: min(50%, 40rem);
 }
 
