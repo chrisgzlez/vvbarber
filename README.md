@@ -34,6 +34,7 @@
 -   [ ] Formulario Rellenar de forma incremental
 -   [ ] Formulario notification
 -   [ ] Carga dinamica de elementos
+-   [ ] Carrusel, hacer scroll up hasta top de sección despues de anchor jump
 
 ## TODOS
 
@@ -41,13 +42,13 @@
 -   [x] Acabar todas las paginas
 -   [x] Hacerlas responsivas (media queries)
     -   [ ] Precios
-    -   [ ] Conocenos [Chris]
+    -   [x] Conocenos [Chris]
 -   [x] Memoria corregir lo anterior
 -   [ ] Memoria nuevas secciones
 -   [x] Responsividad en el footer
 -   [x] Añadir hiperenalces en los carruseles del home
     -   [x] Hiperenlaces de Los barberos [chris]
--   [ ] Fixear los headings estilos [chris]
+-   [x] Fixear los headings estilos [chris]
 
 ## Requisitos Entrega
 
