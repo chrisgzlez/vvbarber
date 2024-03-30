@@ -11,7 +11,7 @@
 }
 
 .nav-active {
-    background-color: white;
+    background-color: var(--color-light);
 }
 
 .nav-active .nav-links li a {
@@ -22,11 +22,11 @@
 .nav-active .nav-links li:hover > a {
     background-color: black;
     border-radius: 20px;
-    color: white;
+    color: var(--color-light);
 }
 
 #toggle {
-    color: white;
+    color: var(--color-light);
     background: none;
     border: none;
     display: none;
@@ -45,12 +45,12 @@
 
 .nav-active #reserva a {
     background-color: black;
-    color: white;
+    color: var(--color-light);
 }
 
 #reserva a {
     color: black;
-    background-color: white;
+    background-color: var(--color-light);
     padding: 5px 15px;
     text-decoration: none;
     border-radius: 20px;
@@ -60,7 +60,7 @@
 
 .nav-active #reserva > a:hover {
     transform: scale(1.2);
-    color: white;
+    color: var(--color-light);
     background-color: black;
 }
 
@@ -72,7 +72,7 @@
 
 .nav-links li a {
     text-decoration: none;
-    color: white;
+    color: var(--color-light);
 }
 
 .nav-links li:hover,
@@ -103,11 +103,11 @@
         padding-top: 10px;
     }
     .nav-active .nav-links li a {
-        color: white;
+        color: var(--color-light);
     }
 
     #reserva a {
-        color: white;
+        color: var(--color-light);
         background-color: inherit;
         padding: 0;
         border-radius: 0;
@@ -136,7 +136,7 @@
 
     .nav-active #reserva a {
         background-color: inherit;
-        color: white;
+        color: var(--color-light);
     }
 
     .nav-active #toggle {

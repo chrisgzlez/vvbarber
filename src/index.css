@@ -7,6 +7,10 @@
     font-size: clamp(16px, 1vw, 32px);
     font-family: "Open Sans";
     font-family: Helvetica, Geneva, Tahoma, sans-serif;
+    --color-primary: #38383b;
+    --color-secondary: #debe66;
+    --color-light: #f3f3f3;
+    --color-dark: #000;
 }
 
 /*------------- HEADER ----------------*/
@@ -39,18 +43,18 @@ h1 {
     bottom: 60px;
     left: 60px;
     font-size: clamp(1rem, 3vw + 0.5rem, 3rem);
-    color: #debe66;
-    border-bottom: 3px solid #debe66;
+    color: var(--color-secondary);
+    border-bottom: 3px solid var(--color-secondary);
     width: min(50%, 40rem);
 }
 
 h2 {
     font-size: clamp(1rem, 2.5vw + 0.5rem, 3rem);
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 h3 {
-    font-size: clamp(1rem, 1vw + 0.5rem, 3rem);
+    font-size: clamp(1rem, 2vw + 0.5rem, 3rem);
     display: flex;
     align-items: flex-start;
     text-decoration: underline;
@@ -58,8 +62,28 @@ h3 {
     margin-bottom: 1rem;
 }
 
+.primary {
+    color: var(--color-primary);
+}
+
+.secondary {
+    color: var(--color-secondary);
+}
+
+.dark {
+    color: var(--color-dark);
+}
+
+.bg-dark {
+    background-color: var(--color-primary);
+}
+
+.light {
+    color: var(--color-light);
+}
+
 strong {
-    color: #debe66;
+    color: var(--color-secondary);
 }
 /*------------- END HEADINGS ----------------*/
 

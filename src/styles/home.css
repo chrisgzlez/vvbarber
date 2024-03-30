@@ -9,7 +9,7 @@
 }
 
 header.home-header {
-    color: white;
+    color: var(--color-light);
     display: flex;
     position: relative;
     flex-direction: column;
@@ -40,15 +40,17 @@ hgroup.home-title {
     align-items: center;
     position: relative;
     bottom: 30%;
-    color: #debe66;
+    color: var(--color-secondary);
 }
 
 hgroup.home-title h1 {
     font-size: clamp(1rem, 3vw + 0.5rem, 3rem);
     position: relative;
-    color: #debe66;
-    border-bottom: 3px solid #debe66;
+    color: var(--color-secondary);
+    border-bottom: 3px solid var(--color-secondary);
     width: 100%;
+    left: 0;
+    bottom: 2rem;
 }
 
 hgroup.home-title p {
@@ -77,11 +79,11 @@ hgroup.home-title p {
 
 .servicios {
     display: flex;
-    background-color: #38383b;
+    background-color: var(--color-primary);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--color-light);
     padding: 3rem 0;
 }
 
@@ -111,7 +113,7 @@ hgroup.home-title p {
     height: 1.5rem;
     border-radius: 50%;
     border: 0.25rem double black;
-    background-color: #debe66;
+    background-color: var(--color-secondary);
     margin: 0 0.25rem;
 }
 
@@ -179,6 +181,7 @@ section.equipo ul {
 
 .barber-card img {
     max-height: 65vh;
+    margin: 1.5rem 0;
 }
 
 .barber-card {
@@ -188,6 +191,14 @@ section.equipo ul {
     align-items: center;
     margin: 0 1.5rem;
     padding-bottom: 1rem;
+}
+.barber-card a {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
 }
 
 .barber-card figcaption {
