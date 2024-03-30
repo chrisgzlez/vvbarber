@@ -55,12 +55,16 @@ section figure img {
 
     section{
         column-count: 1;
-        padding: 1rem 1rem 1rem 1rem;
+        padding: 3rem 1rem 3rem 1rem;
     }
 
     .texto{
         top:none;
         transform: none;
+    }
+
+    section figure {
+        margin: 5% auto ;
     }
 }
 /*------------- END PRECIOS ----------------*/
