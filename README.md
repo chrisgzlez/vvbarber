@@ -17,53 +17,53 @@
 
 ## TODO DOCS
 
--   [ ] Crear apartado de HTML en el documento
--   [ ] Crear apartado de CSS en el documento [Chris]
--   [ ] Crear apartado de Javascript en el documento [Chris]
--   [ ] Crear apartado de cambios
--   [ ] Mapa de Etiquetas de todas las paginas (DOMVisualizer)
--   [ ] Diagrama de Carpetas
+-   [x] Crear apartado de HTML en el documento
+-   [x] Crear apartado de CSS en el documento
+-   [x] Crear apartado de Javascript en el documento
+-   [x] Mapa de Etiquetas de todas las paginas (DOMVisualizer)
+-   [x] Diagrama de Carpetas
 
 ## EFECTOS A REALIZAR
 
 -   [x] Navbar Fija
--   [ ] Fotos se amplian al hacer click
+-   [x] Fotos se amplian al hacer click
 -   [x] Menu hamburguesa
 -   [x] Footer
 -   [x] Navbar
--   [ ] Formulario Rellenar de forma incremental
--   [ ] Formulario notification
--   [ ] Carga dinamica de elementos
--   [ ] Carrusel, hacer scroll up hasta top de sección despues de anchor jump
+-   [x] Formulario Rellenar de forma incremental
+-   [x] Formulario notification
+-   [x] Carga dinamica de elementos
 
 ## TODOS
 
 -   [x] Hacer una hoja principal con todos los estilos y añadirlo en las demás hojas
 -   [x] Acabar todas las paginas
 -   [x] Hacerlas responsivas (media queries)
-    -   [ ] Precios
-    -   [x] Conocenos [Chris]
+    -   [x] Precios
+    -   [x] Conocenos
 -   [x] Memoria corregir lo anterior
--   [ ] Memoria nuevas secciones
+-   [x] Memoria nuevas secciones
 -   [x] Responsividad en el footer
 -   [x] Añadir hiperenalces en los carruseles del home
-    -   [x] Hiperenlaces de Los barberos [chris]
--   [x] Fixear los headings estilos [chris]
+    -   [x] Hiperenlaces de Los barberos
+-   [x] Fixear los headings estilos
 
 ## Requisitos Entrega
 
--   [ ] 5 Accesos al DOM distintos
+-   [x] 5 Accesos al DOM distintos
     -   [x] QuerySelector
     -   [x] GetElementById
-    -   [ ] GetClass
-    -   [ ] Get tag
-    -   [ ] QuerySelectorAll
+    -   [x] GetClass
+    -   [x] GetElementsByName
+    -   [x] QuerySelectorAll
 -   [ ] Eventos:
-    -   [x] Scroll
+    -   [x] onScroll
     -   [x] onClick
-    -   [ ] Submit
+    -   [x] onSubmit
+    -   [x] onAnimationend
 -   [x] Usos de JQuery: Navbar y Footer
 -   [x] Uso de JS6
--   [ ] Carga de contenido formato JSON o XML:
-    -   [ ] cortes de peloa
-    -   [ ] horas de trabajo
+    -   En toods los archivos javas ript, arrow functions
+-   [x] Carga de contenido formato JSON o XML:
+    -   [x] catalogo
+    -   [x] horas de trabajo
