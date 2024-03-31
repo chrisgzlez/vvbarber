@@ -1,0 +1,8 @@
+services:
+    nginx-server:
+        image: nginx:1-alpine3.17-slim
+        volumes:
+            - ./src:/usr/share/nginx/html
+        ports:
+            - 443:443
+            - 80:80
