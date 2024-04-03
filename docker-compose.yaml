@@ -1,8 +1,20 @@
 services:
     nginx-server:
+        profiles:
+            - "front"
         image: nginx:1-alpine3.17-slim
         volumes:
             - ./src:/usr/share/nginx/html
         ports:
             - 443:443
             - 80:80
+    tomcat-server:
+        image: tomcat:jre21
+        volumes:
+            - ./src:/usr/local/tomcat/webapps/barber/
+        ports:
+            - 8080:8080
+        command:
+            - "/bin/sh"
+            - "-c"
+            - "catalina.sh run"
