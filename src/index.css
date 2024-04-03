@@ -15,7 +15,7 @@
 
 /*------------- HEADER ----------------*/
 header {
-    background-image: url(../media/images/background.jpg);
+    background-image: url(/barber/media/images/background.jpg);
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
