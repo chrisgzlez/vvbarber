@@ -1,10 +1,5 @@
 # Vadillos Vilar Barberia
 
-## Desgin
-
--   mockup: https://halibut-pepper-cyyh.squarespace.com/
--   passwd: 8888
-
 ## CSS Pages
 
 -   [x] Home: <Flexbox, Chris>
@@ -56,7 +51,7 @@
     -   [x] GetClass
     -   [x] GetElementsByName
     -   [x] QuerySelectorAll
--   [ ] Eventos:
+-   [x] Eventos:
     -   [x] onScroll
     -   [x] onClick
     -   [x] onSubmit
